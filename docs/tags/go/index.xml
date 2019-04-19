@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kishore Karunakaran&#39;s blog</title>
-    <link>https://khekrn.github.io/khekrn-site/</link>
-    <description>Recent content on Kishore Karunakaran&#39;s blog</description>
+    <title>Go on Kishore Karunakaran&#39;s blog</title>
+    <link>https://khekrn.github.io/khekrn-site/tags/go/</link>
+    <description>Recent content in Go on Kishore Karunakaran&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://khekrn.github.io/khekrn-site/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://khekrn.github.io/khekrn-site/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>https://khekrn.github.io/khekrn-site/about/</link>
-      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://khekrn.github.io/khekrn-site/about/</guid>
-      <description>Thanks for visiting my blog. My name is Kishore Karunakaran. I’m a Software Engineer from India and love solving problems. My desire to solve problems started from my college days and ever since I try not to restrict myself when it comes to technology, and strive to constantly learn new things.
-Currently working on building reliable and scalable financial systems. Research and Software development on Machine Learning, Natural Language Processing and Distributed Systems.</description>
-    </item>
     
     <item>
       <title>Probabilistic Data Structures Part - 1</title>

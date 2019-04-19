@@ -6,9 +6,55 @@
     <description>Recent content in Tags on Kishore Karunakaran&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://khekrn.github.io/khekrn-site/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Algorithms</title>
+      <link>https://khekrn.github.io/khekrn-site/tags/algorithms/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://khekrn.github.io/khekrn-site/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Structures</title>
+      <link>https://khekrn.github.io/khekrn-site/tags/data-structures/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://khekrn.github.io/khekrn-site/tags/data-structures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://khekrn.github.io/khekrn-site/tags/go/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://khekrn.github.io/khekrn-site/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://khekrn.github.io/khekrn-site/tags/golang/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://khekrn.github.io/khekrn-site/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probability</title>
+      <link>https://khekrn.github.io/khekrn-site/tags/probability/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://khekrn.github.io/khekrn-site/tags/probability/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
