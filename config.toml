@@ -4,6 +4,8 @@ title = "Kishore Karunakaran's blog"
 themesDir = "themes"
 publishDir = "docs"
 theme = "minimal-bootstrap-hugo-theme"
+enableRobotsTXT = true
+canonifyURLs = true
 
 [taxonomies]
   tag = "tags"
@@ -17,7 +19,7 @@ theme = "minimal-bootstrap-hugo-theme"
   contentTextColor = "#212529"
   contentLinkColor = "#007bff"
   contentLinkHoverColor = "#0056b3"
-  navbarBackgroundColor = "#212529"
+  navbarBackgroundColor = "#662d91"#212529"
   navbarLinkColor = "rgba(255, 255, 255, 0.75)"
   navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
   wrapperMaxWidth = "800px"
