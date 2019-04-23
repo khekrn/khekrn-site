@@ -219,6 +219,7 @@ blockquote,
 <li>Google Bigtable, Apache HBase and Apache Cassandra, Postgresql and many more databases use Probabilistic data structures to reduce the disk lookups for non-existent rows or columns. Avoiding costly disk lookups considerably increases the performance of a database query operation.</li>
 <li>Medium uses Probabilistic data structures to check if an article has already been recommended to an user.</li>
 <li>Ethereum uses Probabilistic data structures for quickly finding logs on the Ethereum blockchain.</li>
+<li>URL Shortners</li>
 <li>The Google Chrome web browser used to use a Probabilistic data structure to identify malicious URLs.</li>
 <li>For realtime monitoring dashboards and many more.</li>
 </ul>
@@ -242,7 +243,53 @@ blockquote,
 
 <h2 id="membership-case-study">Membership Case Study</h2>
 
-<p>A membership problem for a dataset is a task to decide whether some element belongs to the dataset or not.</p>
+<p>A membership problem for a dataset is a task to decide whether some element belongs to the dataset or not. For a small set, it can be solved by direct lookup via set or map, but for large data it&rsquo;s not efficient and requires too much time and memory.</p>
+
+<p>Suppose let&rsquo;s say you are signing up for the new Email id. When you enter a new mail id, respective mail service will check whether the given mail id already exists.</p>
+
+<p><img src="https://khekrn.github.io/khekrn-site/img/email.png" alt="image alt text" /></p>
+
+<p>So how can we build such a kind of systems ?</p>
+
+<p>No, we cannot keep all email id&rsquo;s in memory because it&rsquo;s not practical. We can store all email id&rsquo;s on disk and we can read from the disk and check whether the given mail id exists or not, but reading and writing to disk is time consuming. We can do better, We can use Probabilistic Data Structure to solve this problem.</p>
+
+<h3 id="bloom-filter">Bloom Filter</h3>
+
+<p>It is a space-efficient probabilistic data structure for representing a dataset D = {x1, x2,&hellip;, xn} of n elements that supports only two operations.</p>
+
+<ul>
+<li>Adding an elements to the set(add)</li>
+<li>Checking whether the element exist in the set or not(test)</li>
+</ul>
+
+<p>When bloom filter checks whether an item exist in the set, it can give either it&rsquo;s present or not present. If the bloom filter gives the result as not present, it&rsquo;s 100% sure the item does not exist in the set but it is not same for when the result is present, because when the result is present, it&rsquo;s only 90% sure that the item exist.
+<strong>False positive matches are possible but false negatives are not</strong>.</p>
+
+<ul>
+<li><strong>BloomFilter.test(item) =&gt; &ldquo;Possible in set&rdquo; or &ldquo;Definitely not in set&rdquo;</strong></li>
+</ul>
+
+<p>The Bloom filter is represented by a bit array and can be described by its length <strong>L</strong> and number of different hash functions <strong>H</strong>. Each hash function should be independent and uniformly distributed. In this way, we randomize the hash values uniformly (you can think of it as using hash functions as some kind of random-number generator) in the filter and decrease the probability of hash collisions. Such an approach drastically reduces the storage space and, regardless of the number of elements in the data structure and their size, requires a constant number of bits by reserving a few bits per element.</p>
+
+<p>In the begining the bit array of length <strong>L</strong> all bits are equal to zero. i.e. Set is empty.</p>
+
+<p><img src="https://khekrn.github.io/khekrn-site/img/bit_array1.png" alt="image alt text" /></p>
+
+<p>To insert an element <strong>x</strong> into the filter, for every hash function <strong>H(i)</strong> we compute its value <strong>j</strong> = <strong>H(i){x}</strong> on the element <strong>x</strong> and set the corresponding bit <strong>j</strong> in the filter to one. Note, it is possible that some bits can be set multiple times due to hash collisions.</p>
+
+<p><img src="https://khekrn.github.io/khekrn-site/img/bit_array2.png" alt="image alt text" /></p>
+
+<p>In the above diagram, I&rsquo;ve used only two hash function, but in practice, we will use more hash functions. When we have more hash functions we can reduce the hash collisions. It is possible that different elements can share corresponding bits(both inputs shared 5th index in the above pic)</p>
+
+<p>When we need to test if the given element <strong>x</strong> is in the filter, we compute all hash functions <strong>H(i){x}</strong> for i=1,2,&hellip;n and check bits in the corresponding positions. If all bits are set to one, then the element <strong>x</strong> may exist in the filter. Otherwise, the element <strong>x</strong> is definitely not in the filter.</p>
+
+<p><img src="https://khekrn.github.io/khekrn-site/img/bit_array3.png" alt="image alt text" /></p>
+
+<p>In the above case, for the input &ldquo;justincampell&rdquo; we compute all hash functions in this case we have two hash functions and that gives us two index(2, 8). Thus, checking the bits 2 and 8, we see that bit 2 isn’t set, therefore the item &ldquo;justincampell&rdquo; is <strong><em>definitely not in the set</em></strong> and we don’t even need to check bit 8.</p>
+
+<p><img src="https://khekrn.github.io/khekrn-site/img/bit_array4.png" alt="image alt text" /></p>
+
+<p>Similarly, For the above case we pass the input &ldquo;jack.cbe&rdquo; to our hash functions which results index(5, 23). After that, we check the corresponding bits in the set and see that both of them are set to one, therefore we claim that &ldquo;jack.cbe&rdquo; <strong><em>may exist in the set</em></strong>.</p>
 
     </article>
   </div>

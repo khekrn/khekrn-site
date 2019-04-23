@@ -16,6 +16,7 @@ Probabilistic data structure is a data structure which always provides approxima
 - Google Bigtable, Apache HBase and Apache Cassandra, Postgresql and many more databases use Probabilistic data structures to reduce the disk lookups for non-existent rows or columns. Avoiding costly disk lookups considerably increases the performance of a database query operation.
 - Medium uses Probabilistic data structures to check if an article has already been recommended to an user.
 - Ethereum uses Probabilistic data structures for quickly finding logs on the Ethereum blockchain.
+- URL Shortners
 - The Google Chrome web browser used to use a Probabilistic data structure to identify malicious URLs.
 - For realtime monitoring dashboards and many more.
 
@@ -36,4 +37,46 @@ Probablistic data strctures uses non Cryptographic hash functions. The reason fo
 
 ## Membership Case Study
 
-A membership problem for a dataset is a task to decide whether some element belongs to the dataset or not.
+A membership problem for a dataset is a task to decide whether some element belongs to the dataset or not. For a small set, it can be solved by direct lookup via set or map, but for large data it's not efficient and requires too much time and memory.
+
+Suppose let's say you are signing up for the new Email id. When you enter a new mail id, respective mail service will check whether the given mail id already exists.
+
+![image alt text](/img/email.png)
+
+So how can we build such a kind of systems ?
+
+No, we cannot keep all email id's in memory because it's not practical. We can store all email id's on disk and we can read from the disk and check whether the given mail id exists or not, but reading and writing to disk is time consuming. We can do better, We can use Probabilistic Data Structure to solve this problem.
+
+### Bloom Filter
+
+It is a space-efficient probabilistic data structure for representing a dataset D = {x1, x2,..., xn} of n elements that supports only two operations.
+
+- Adding an elements to the set(add)
+- Checking whether the element exist in the set or not(test)
+
+When bloom filter checks whether an item exist in the set, it can give either it's present or not present. If the bloom filter gives the result as not present, it's 100% sure the item does not exist in the set but it is not same for when the result is present, because when the result is present, it's only 90% sure that the item exist.
+**False positive matches are possible but false negatives are not**.
+
+- **BloomFilter.test(item) => "Possible in set" or "Definitely not in set"**
+
+The Bloom filter is represented by a bit array and can be described by its length **L** and number of different hash functions **H**. Each hash function should be independent and uniformly distributed. In this way, we randomize the hash values uniformly (you can think of it as using hash functions as some kind of random-number generator) in the filter and decrease the probability of hash collisions. Such an approach drastically reduces the storage space and, regardless of the number of elements in the data structure and their size, requires a constant number of bits by reserving a few bits per element.
+
+In the begining the bit array of length **L** all bits are equal to zero. i.e. Set is empty.
+
+![image alt text](/img/bit_array1.png)
+
+To insert an element **x** into the filter, for every hash function **H(i)** we compute its value **j** = **H(i){x}** on the element **x** and set the corresponding bit **j** in the filter to one. Note, it is possible that some bits can be set multiple times due to hash collisions.
+
+![image alt text](/img/bit_array2.png)
+
+In the above diagram, I've used only two hash function, but in practice, we will use more hash functions. When we have more hash functions we can reduce the hash collisions. It is possible that different elements can share corresponding bits(both inputs shared 5th index in the above pic)
+
+When we need to test if the given element **x** is in the filter, we compute all hash functions **H(i){x}** for i=1,2,...n and check bits in the corresponding positions. If all bits are set to one, then the element **x** may exist in the filter. Otherwise, the element **x** is definitely not in the filter.
+
+![image alt text](/img/bit_array3.png)
+
+In the above case, for the input "justincampell" we compute all hash functions in this case we have two hash functions and that gives us two index(2, 8). Thus, checking the bits 2 and 8, we see that bit 2 isn’t set, therefore the item "justincampell" is ***definitely not in the set*** and we don’t even need to check bit 8.
+
+![image alt text](/img/bit_array4.png)
+
+Similarly, For the above case we pass the input "jack.cbe" to our hash functions which results index(5, 23). After that, we check the corresponding bits in the set and see that both of them are set to one, therefore we claim that "jack.cbe" ***may exist in the set***.
