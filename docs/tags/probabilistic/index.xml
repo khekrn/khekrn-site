@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probabilistic on Kishore Karunakaran&#39;s blog</title>
+    <link>https://khekrn.github.io/khekrn-site/tags/probabilistic/</link>
+    <description>Recent content in Probabilistic on Kishore Karunakaran&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://khekrn.github.io/khekrn-site/tags/probabilistic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Probabilistic Data Structures Part - 1</title>
+      <link>https://khekrn.github.io/khekrn-site/probability-data-structures-part-1/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://khekrn.github.io/khekrn-site/probability-data-structures-part-1/</guid>
+      <description>Introduction Probabilistic data structure is a data structure which always provides approximated answers, but with reliable ways to estimate possible errors. Basically, it stores a summary of data instead of storing the entire data that&amp;rsquo;s why it gives us approximate results instead of deterministic results. The errors are compensated with low memory requirements, constant query/lookup time, scaling and many other factors which are essential in distributed data applications.
+Use Cases  Google Bigtable, Apache HBase and Apache Cassandra, Postgresql and many more databases use Probabilistic data structures to reduce the disk lookups for non-existent rows or columns.</description>
+    </item>
+    
+  </channel>
+</rss>

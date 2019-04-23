@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Bloom Filters</title>
+      <link>https://khekrn.github.io/khekrn-site/tags/bloom-filters/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://khekrn.github.io/khekrn-site/tags/bloom-filters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data Structures</title>
       <link>https://khekrn.github.io/khekrn-site/tags/data-structures/</link>
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
@@ -48,11 +57,20 @@
     </item>
     
     <item>
-      <title>Probability</title>
-      <link>https://khekrn.github.io/khekrn-site/tags/probability/</link>
+      <title>Probabilistic</title>
+      <link>https://khekrn.github.io/khekrn-site/tags/probabilistic/</link>
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://khekrn.github.io/khekrn-site/tags/probability/</guid>
+      <guid>https://khekrn.github.io/khekrn-site/tags/probabilistic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Data Structures</title>
+      <link>https://khekrn.github.io/khekrn-site/tags/probabilistic-data-structures/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://khekrn.github.io/khekrn-site/tags/probabilistic-data-structures/</guid>
       <description></description>
     </item>
     

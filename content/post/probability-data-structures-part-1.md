@@ -4,7 +4,7 @@ date: 2019-04-18
 publishdate: 2019-04-18
 lastmod: 2019-04-18
 draft: false
-tags: ["go", "golang", "probability", "algorithms", "data-structures"]
+tags: ["go", "golang", "probabilistic", "probabilistic data structures", "algorithms", "data structures", "bloom filters"]
 ---
 
 ## Introduction
@@ -75,8 +75,8 @@ When we need to test if the given element **x** is in the filter, we compute all
 
 ![image alt text](/img/bit_array3.png)
 
-In the above case, for the input "justincampell" we compute all hash functions in this case we have two hash functions and that gives us two index(2, 8). Thus, checking the bits 2 and 8, we see that bit 2 isn’t set, therefore the item "justincampell" is ***definitely not in the set*** and we don’t even need to check bit 8.
+In the above case, for the input "justincampell" we compute all hash functions in this case we have two hash functions and that gives us two indices(2, 8). Thus, checking the bits 2 and 8, we see that bit 2 isn’t set, therefore the item "justincampell" is ***definitely not in the set*** and we don’t even need to check bit 8.
 
 ![image alt text](/img/bit_array4.png)
 
-Similarly, For the above case we pass the input "jack.cbe" to our hash functions which results index(5, 23). After that, we check the corresponding bits in the set and see that both of them are set to one, therefore we claim that "jack.cbe" ***may exist in the set***.
+Similarly, For the above case we pass the input "jack.cbe" to our hash functions which results indices(5, 23). After that, we check the corresponding bits in the set and see that both of them are set to one, therefore we claim that "jack.cbe" ***may exist in the set***.
