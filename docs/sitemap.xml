@@ -8,26 +8,8 @@
   </url>
   
   <url>
-    <loc>https://khekrn.github.io/khekrn-site/</loc>
-    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://khekrn.github.io/khekrn-site/post/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://khekrn.github.io/khekrn-site/probability-data-structures-part-1/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://khekrn.github.io/khekrn-site/tags/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -61,13 +43,25 @@
   </url>
   
   <url>
-    <loc>https://khekrn.github.io/khekrn-site/tags/probabilistic/</loc>
+    <loc>https://khekrn.github.io/khekrn-site/</loc>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://khekrn.github.io/khekrn-site/post/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://khekrn.github.io/khekrn-site/tags/probabilistic-data-structures/</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://khekrn.github.io/khekrn-site/tags/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
