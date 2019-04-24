@@ -37,7 +37,7 @@ Probablistic data strctures uses non Cryptographic hash functions. The reason fo
 
 ## Membership Case Study
 
-A membership problem for a dataset is a task to decide whether some element belongs to the dataset or not. For a small set, it can be solved by direct lookup via set or map, but for large data it's not efficient and requires too much time and memory.
+A membership problem for a set is a task to decide whether some element belongs to the set or not. For a small set, it can be solved by direct lookup via set or map, but for large data it's not efficient and requires too much time and memory.
 
 Suppose let's say you are signing up for the new Email id. When you enter a new mail id, respective mail service will check whether the given mail id already exists.
 
@@ -55,9 +55,8 @@ It is a space-efficient probabilistic data structure for representing a dataset 
 - Checking whether the element exist in the set or not(test)
 
 When bloom filter checks whether an item exist in the set, it can give either it's present or not present. If the bloom filter gives the result as not present, it's 100% sure the item does not exist in the set but it is not same for when the result is present, because when the result is present, it's only 90% sure that the item exist.
-**False positive matches are possible but false negatives are not**.
 
-- **BloomFilter.test(item) => "Possible in set" or "Definitely not in set"**
+- **test(item) => "May be in the set" or "Definitely not in set"**
 
 The Bloom filter is represented by a bit array and can be described by its length **L** and number of different hash functions **H**. Each hash function should be independent and uniformly distributed. In this way, we randomize the hash values uniformly (you can think of it as using hash functions as some kind of random-number generator) in the filter and decrease the probability of hash collisions. Such an approach drastically reduces the storage space and, regardless of the number of elements in the data structure and their size, requires a constant number of bits by reserving a few bits per element.
 
