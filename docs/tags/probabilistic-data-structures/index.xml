@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>probabilistic data structures on Kishore Karunakaran&#39;s blog</title>
+    <title>Probabilistic Data Structures on Kishore Karunakaran&#39;s blog</title>
     <link>https://khekrn.github.io/khekrn-site/tags/probabilistic-data-structures/</link>
-    <description>Recent content in probabilistic data structures on Kishore Karunakaran&#39;s blog</description>
+    <description>Recent content in Probabilistic Data Structures on Kishore Karunakaran&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -17,8 +17,9 @@
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://khekrn.github.io/khekrn-site/probability-data-structures-part-1/</guid>
-      <description>Introduction Probabilistic data structure is a data structure which always provides approximated answers, but with reliable ways to estimate possible errors. Basically, it stores a summary of data instead of storing the entire data that&amp;rsquo;s why it gives us approximate results instead of deterministic results. The errors are compensated with low memory requirements, constant query/lookup time, scaling and many other factors which are essential in distributed data applications.
-Use Cases  Google Bigtable, Apache HBase and Apache Cassandra, Postgresql and many more databases use Probabilistic data structures to reduce the disk lookups for non-existent rows or columns.</description>
+      <description>Suppose let&amp;rsquo;s say you are signing up for the new Email id. When you enter a new mail id,respective mail service will check whether the given mail id already exists.
+So how can we build such a kind of systems ?
+No, we cannot keep all email id&amp;rsquo;s in memory because it&amp;rsquo;s not practical. We can store all email id&amp;rsquo;s on disk and we can read from the disk and check whether the given mail id exists or not, but reading and writing to disk is time consuming.</description>
     </item>
     
   </channel>

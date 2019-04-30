@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>algorithms</title>
+      <title>Algorithms</title>
       <link>https://khekrn.github.io/khekrn-site/tags/algorithms/</link>
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>bloom filters</title>
+      <title>Bloom Filters</title>
       <link>https://khekrn.github.io/khekrn-site/tags/bloom-filters/</link>
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -30,7 +30,7 @@
     </item>
     
     <item>
-      <title>data structures</title>
+      <title>Data Structures</title>
       <link>https://khekrn.github.io/khekrn-site/tags/data-structures/</link>
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -39,7 +39,7 @@
     </item>
     
     <item>
-      <title>go</title>
+      <title>Go</title>
       <link>https://khekrn.github.io/khekrn-site/tags/go/</link>
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -48,7 +48,7 @@
     </item>
     
     <item>
-      <title>golang</title>
+      <title>Golang</title>
       <link>https://khekrn.github.io/khekrn-site/tags/golang/</link>
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -57,16 +57,7 @@
     </item>
     
     <item>
-      <title>probabilistic</title>
-      <link>https://khekrn.github.io/khekrn-site/tags/probabilistic/</link>
-      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://khekrn.github.io/khekrn-site/tags/probabilistic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>probabilistic data structures</title>
+      <title>Probabilistic Data Structures</title>
       <link>https://khekrn.github.io/khekrn-site/tags/probabilistic-data-structures/</link>
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
