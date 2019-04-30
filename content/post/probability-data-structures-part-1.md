@@ -11,9 +11,12 @@ Suppose let's say you are signing up for the new Email id. When you enter a new 
 
 ![image alt text](/img/email.png)
 
-So how can we build such a kind of systems ?
+So how can we build such a kind of systems ? Think for a minute before continue reading
 
-No, we cannot keep all email id's in memory because it's not practical. We can store all email id's on disk and we can read from the disk and check whether the given mail id exists or not, but reading and writing to disk is time consuming. We can do better, We can use Probabilistic Data Structure to solve this problem.
+- Keep all email id's in memory i.e. Cache, It's not pratical to keep all email id's in memmory.
+- Store it in database/disk and check whether the given email id exist by reading or querying from db/disk. This will be more time consuming.
+
+Let's see how we can use probability data structures to build these kind of systems.
 
 ### Bloom Filter
 
