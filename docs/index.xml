@@ -28,8 +28,8 @@ Currently working on building reliable and scalable financial systems. Research 
       
       <guid>https://khekrn.github.io/khekrn-site/probability-data-structures-part-1/</guid>
       <description>Suppose let&amp;rsquo;s say you are signing up for the new Email id. When you enter a new mail id,respective mail service will check whether the given mail id already exists.
-So how can we build such a kind of systems ?
-No, we cannot keep all email id&amp;rsquo;s in memory because it&amp;rsquo;s not practical. We can store all email id&amp;rsquo;s on disk and we can read from the disk and check whether the given mail id exists or not, but reading and writing to disk is time consuming.</description>
+So how can we build such a kind of systems ? Think for a minute before continue reading
+ Keep all email id&amp;rsquo;s in memory i.e. Cache, It&amp;rsquo;s not pratical to keep all email id&amp;rsquo;s in memmory. Store it in database/disk and check whether the given email id exist by reading or querying from db/disk.</description>
     </item>
     
   </channel>

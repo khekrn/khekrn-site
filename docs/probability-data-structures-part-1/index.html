@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
-  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="generator" content="Hugo 0.56.0-DEV" />
 
   
   <meta name="description" content="Kishore Karunakaran&#39;s Blog">
@@ -216,9 +216,14 @@ blockquote,
 
 <p><img src="https://khekrn.github.io/khekrn-site/img/email.png" alt="image alt text" /></p>
 
-<p>So how can we build such a kind of systems ?</p>
+<p>So how can we build such a kind of systems ? Think for a minute before continue reading</p>
 
-<p>No, we cannot keep all email id&rsquo;s in memory because it&rsquo;s not practical. We can store all email id&rsquo;s on disk and we can read from the disk and check whether the given mail id exists or not, but reading and writing to disk is time consuming. We can do better, We can use Probabilistic Data Structure to solve this problem.</p>
+<ul>
+<li>Keep all email id&rsquo;s in memory i.e. Cache, It&rsquo;s not pratical to keep all email id&rsquo;s in memmory.</li>
+<li>Store it in database/disk and check whether the given email id exist by reading or querying from db/disk. This will be more time consuming.</li>
+</ul>
+
+<p>Let&rsquo;s see how we can use probability data structures to build these kind of systems.</p>
 
 <h3 id="bloom-filter">Bloom Filter</h3>
 

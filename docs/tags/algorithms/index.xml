@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Algorithms on Kishore Karunakaran&#39;s blog</title>
+    <title>algorithms on Kishore Karunakaran&#39;s blog</title>
     <link>https://khekrn.github.io/khekrn-site/tags/algorithms/</link>
-    <description>Recent content in Algorithms on Kishore Karunakaran&#39;s blog</description>
+    <description>Recent content in algorithms on Kishore Karunakaran&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -18,8 +18,8 @@
       
       <guid>https://khekrn.github.io/khekrn-site/probability-data-structures-part-1/</guid>
       <description>Suppose let&amp;rsquo;s say you are signing up for the new Email id. When you enter a new mail id,respective mail service will check whether the given mail id already exists.
-So how can we build such a kind of systems ?
-No, we cannot keep all email id&amp;rsquo;s in memory because it&amp;rsquo;s not practical. We can store all email id&amp;rsquo;s on disk and we can read from the disk and check whether the given mail id exists or not, but reading and writing to disk is time consuming.</description>
+So how can we build such a kind of systems ? Think for a minute before continue reading
+ Keep all email id&amp;rsquo;s in memory i.e. Cache, It&amp;rsquo;s not pratical to keep all email id&amp;rsquo;s in memmory. Store it in database/disk and check whether the given email id exist by reading or querying from db/disk.</description>
     </item>
     
   </channel>
